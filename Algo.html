@@ -18,5 +18,109 @@
 6. Test set with 20 entries was not compatible so make it compatible with training data set
 <br/>
 7. predict on test set.
+
+
+<br/>
+<br/>
+<h1> OUTPUT in the RStudio Window</h1>
+
+<h2>Decision Tree</h2>
+<p>Confusion Matrix and Statistics
+</br>
+          Reference
+</br>
+Prediction    A    B    C    D    E
+</br>         A 2161   65    6    6    0
+    </br>     B   50 1277   90   71    0
+        </br> C   21  165 1248  129   54
+         </br>D    0   11   11  868   69
+         </br>E    0    0   13  212 1319
+</br>
+Overall Statistics
+ </br>                                         
+               Accuracy : 0.876           
+ </br>                95% CI : (0.8685, 0.8832)
+  </br>  No Information Rate : 0.2845          
+   </br> P-Value [Acc > NIR] : < 2.2e-16       
+</br>                                          
+</br>                  Kappa : 0.843           
+ </br>Mcnemar's Test P-Value : NA              
+</br>
+Statistics by Class:
+
+</br>                     Class: A Class: B Class: C Class: D Class: E
+</br>Sensitivity            0.9682   0.8412   0.9123   0.6750   0.9147
+</br>Specificity            0.9863   0.9667   0.9430   0.9861   0.9649
+</br>Pos Pred Value         0.9656   0.8582   0.7718   0.9051   0.8543
+</br>Neg Pred Value         0.9873   0.9621   0.9807   0.9393   0.9805
+</br>Prevalence             0.2845   0.1935   0.1744   0.1639   0.1838
+</br>Detection Rate         0.2754   0.1628   0.1591   0.1106   0.1681
+</br>Detection Prevalence   0.2852   0.1897   0.2061   0.1222   0.1968
+</br>Balanced Accuracy      0.9772   0.9039   0.9277   0.8305   0.9398
+<h2>Random Forest</h2>
+Confusion Matrix and Statistics
+</br>
+       </br>   Reference
+</br>Prediction    A    B    C    D    E
+</br>         A 2230    2    0    0    0
+</br>         B    2 1516    1    0    0
+</br>         C    0    0 1366    2    0
+</br>         D    0    0    1 1282    0
+</br>         E    0    0    0    2 1442
+</br>
+</br>Overall Statistics
+</br>                                          
+</br>               Accuracy : 0.9987          
+</br>                 95% CI : (0.9977, 0.9994)
+</br>    No Information Rate : 0.2845          
+    </br>P-Value [Acc > NIR] : < 2.2e-16       
+         </br>                                 
+         </br>         Kappa : 0.9984          
+ </br>Mcnemar's Test P-Value : NA              
+</br>
+Statistics by Class:
+</br>
+      </br>               Class: A Class: B Class: C Class: D Class: E
+</br>Sensitivity            0.9991   0.9987   0.9985   0.9969   1.0000
+</br>Specificity            0.9996   0.9995   0.9997   0.9998   0.9997
+</br>Pos Pred Value         0.9991   0.9980   0.9985   0.9992   0.9986
+</br>Neg Pred Value         0.9996   0.9997   0.9997   0.9994   1.0000
+</br>Prevalence             0.2845   0.1935   0.1744   0.1639   0.1838
+</br>Detection Rate         0.2842   0.1932   0.1741   0.1634   0.1838
+</br>Detection Prevalence   0.2845   0.1936   0.1744   0.1635   0.1840
+</br>Balanced Accuracy      0.9994   0.9991   0.9991   0.9984   0.9998
+</p>
+<h2>SVM</h2>
+Confusion Matrix and Statistics
+</br>
+          Reference
+</br>Prediction    A    B    C    D    E
+</br>         A 2221  138    1    0    0
+</br>         B    2 1355   54    0    0
+     </br>    C    7   25 1304   84    3
+     </br>    D    0    0    9 1202   41
+     </br>    E    2    0    0    0 1398
+</br>
+Overall Statistics
+     </br>                                     
+     </br>          Accuracy : 0.9534          
+     </br>            95% CI : (0.9485, 0.9579)
+    </br>No Information Rate : 0.2845          
+    </br>P-Value [Acc > NIR] : < 2.2e-16       
+         </br>                                 
+         </br>         Kappa : 0.9409          
+ </br>Mcnemar's Test P-Value : NA              
+</br>
+Statistics by Class:
+</br>
+      </br>               Class: A Class: B Class: C Class: D Class: E
+</br>Sensitivity            0.9951   0.8926   0.9532   0.9347   0.9695
+</br>Specificity            0.9752   0.9912   0.9816   0.9924   0.9997
+</br>Pos Pred Value         0.9411   0.9603   0.9164   0.9601   0.9986
+</br>Neg Pred Value         0.9980   0.9747   0.9900   0.9873   0.9932
+</br>Prevalence             0.2845   0.1935   0.1744   0.1639   0.1838
+</br>Detection Rate         0.2831   0.1727   0.1662   0.1532   0.1782
+</br>Detection Prevalence   0.3008   0.1798   0.1814   0.1596   0.1784
+</br>Balanced Accuracy      0.9852   0.9419   0.9674   0.9635   0.9846
 </body>
 </html>
